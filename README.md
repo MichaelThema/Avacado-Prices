@@ -1,17 +1,14 @@
 
-## Exploring Hass Avocado Market Trends: A Data-Driven Analysis of Sales and Pricing (2015-2023)
+# QCTO - Workplace Module
 
-### Project Overview
+### Project Title: Exploring Hass Avocado Market Trends: A Data-Driven Analysis of Sales and Pricing (2015-2023)
+#### Done By: Michael Thema
 
-This project aims to analyze the sales and pricing trends of Hass avocados in the United States between 2015 and 2023. It explores how factors such as seasonality, regional differences, and economic conditions impact avocado prices and sales volumes. The insights gathered from this analysis can help stakeholders—producers, retailers, and consumers—make more informed decisions regarding pricing strategies, inventory management, and market expansion.
+© ExploreAI 2024
 
-### Goals of the Project:
-Trend Analysis: Examining historical trends in avocado prices and sales.
-Regional Comparison: Understanding the impact of local factors on market dynamics.
-Predictive Modeling: Forecasting future prices and sales.
-Impact Assessment: Evaluating external factors affecting market conditions.
+---
 
-### Table of Contents
+## Table of Contents
 
 - [Background Context](#background-context)
 1. [Importing Packages](#importing-packages)
@@ -25,28 +22,42 @@ Impact Assessment: Evaluating external factors affecting market conditions.
 9. [Conclusion and Future Work](#conclusion-and-future-work)
 10. [References](#references)
 
+---
 
+## Background Context
 
-### To replicate the analysis, you need the following Python packages installed:
+The purpose of this project is to analyze the sales and pricing trends of Hass avocados in the United States from 2015 to 2023. The project aims to provide insights into how various factors, such as seasonality, regional differences, and economic conditions, influence avocado prices and sales volumes.
 
-bash
-Copy code
-pip install pandas numpy matplotlib seaborn scikit-learn statsmodels
-Make sure you are using Python 3.7 or higher.
+By understanding these dynamics, the project seeks to help stakeholders—such as producers, retailers, and consumers—make more informed decisions regarding avocado pricing strategies, inventory management, and market expansion.
 
-### Project Structure
+### Goals
 
-#### The project consists of the following key sections:
+- **Trend Analysis**: Examine historical trends in avocado prices and sales volumes over the given period, identifying patterns linked to seasonal or regional factors.
+- **Regional Comparison**: Compare avocado market dynamics across different regions to understand how local conditions affect pricing and sales.
+- **Predictive Modeling**: Develop models to forecast future avocado prices and sales volumes, aiding in planning and decision-making.
+- **Impact Assessment**: Assess the impact of external factors, such as economic changes or shifts in consumer preferences, on avocado prices and sales.
 
-* Importing Packages: Importing essential libraries for data manipulation, visualization, and modeling.
-* Data Collection and Description: An overview of the dataset, including data sources and a description of the available data.
-* Data Loading: Loading the dataset into memory.
-* Data Cleaning and Filtering: Handling missing values, filtering unnecessary data, and preparing the dataset for analysis.
-* Exploratory Data Analysis (EDA): Visualizing the data to identify trends, correlations, and anomalies.
-* Modeling: Building predictive models to forecast future prices and sales.
-* Evaluation and Validation: Assessing the model's performance using metrics like RMSE and R².
-* Conclusion and Future Work: Summarizing insights and outlining potential improvements.
+---
 
-### Data Collection
+## 1. Importing Packages
 
+The following Python libraries are used in the project for data manipulation, visualization, and modeling:
+
+- **Pandas**: For data manipulation and analysis.
+- **NumPy**: For numerical operations.
+- **Matplotlib/Seaborn**: For data visualization.
+- **Scikit-learn**: For machine learning and modeling.
+- **Statsmodels**: For statistical modeling.
+- **Datetime**: For handling date and time data.
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+import statsmodels.api as sm
+from datetime import datetime
 
